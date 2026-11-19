@@ -71,6 +71,6 @@ The project demonstrates the practical application of Deterministic Finite Autom
 
 ## Academic Context
 
-Developed as part of the course 22AIE302 – Formal Languages and Automata.
+Developed as part of the course Formal Languages and Automata.
 
 **Project: TRACE THE HACKER**
