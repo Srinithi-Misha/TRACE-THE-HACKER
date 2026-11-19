@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TRACE THE HACKER</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body><main id="crt">
+<section id="landing" class="screen active">
+  <p class="blink yellow">Click the Play button</p><h1>TRACE<br>THE<br>HACKER</h1>
+  <p class="yellow">A CYBERSECURITY &amp; AUTOMATA ARCADE</p>
+  <button class="btn big" onclick="goLevels()">PLAY</button>
+  <p class="small dim">HI-SCORE 000000 · FLA LABS</p>
+</section>
+
+<section id="levels" class="screen">
+  <button class="btn ghost back" onclick="back()">◀ BACK</button>
+  <h2>SELECT MISSION</h2><div id="levelList"></div>
+</section>
+
+<section id="briefing" class="screen">
+  <button class="btn ghost back" onclick="back()">◀ BACK</button>
+  <h2 id="bTitle"></h2><div class="panel">
+    <p class="label">SITUATION</p><p id="bSituation"></p>
+    <p class="label">MISSION</p><p id="bObjective"></p>
+    <p class="label">HOW TO PLAY</p>
+    <p class="small">Choose event cards, arrange a sequence and run a probe. Study the hidden-state trace. Reach the target before your probes run out.</p>
+  </div>
+  <button class="btn" onclick="startGame()">START MISSION</button>
+</section>
+
+<section id="game" class="screen">
+  <button class="btn ghost back" onclick="back()">◀ BACK</button>
+  <div class="hud"><span id="gTitle"></span><span>PROBES <b id="probeCount"></b></span></div>
+  <p id="gObjective" class="small"></p>
+  <p class="label">EVENT CARDS — CLICK TO ADD</p><div id="tray" class="cards"></div>
+  <p class="label">YOUR SEQUENCE</p><div id="sequence" class="cards seq"></div>
+  <div class="row"><button class="btn ghost" onclick="clearSeq()">CLEAR</button><button class="btn" onclick="runProbe()">RUN PROBE</button></div>
+  <p class="label">HONEYPOT TERMINAL</p><div id="terminal" class="terminal"> &gt; awaiting input...</div>
+</section>
+
+<section id="result" class="screen">
+  <button class="btn ghost back" onclick="back()">◀ BACK</button>
+  <h2 id="rTitle"></h2><div id="rStars" class="stars"></div><div id="rBody" class="panel"></div>
+  <div class="row" id="rButtons"></div>
+</section>
+<section id="final" class="screen">
+  <h1>CONGRATULATIONS,<br>ANALYST!</h1>
+  <div class="panel">You completed all three investigations. Stay curious. Stay alert. Keep learning!</div>
+  <button class="btn" onclick="goLevels()">MISSION SELECT</button>
+</section>
+</main><script src="/static/script.js"></script></body></html>
