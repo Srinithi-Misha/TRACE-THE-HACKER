@@ -35,7 +35,7 @@ The project demonstrates the practical application of Deterministic Finite Autom
 1. Clone the repository:
 
    ```bash
-   git clone YOUR_REPOSITORY_URL
+   git clone https://github.com/Srinithi-Misha/TRACE-THE-HACKER.git
    ```
 
 2. Navigate to the project directory:
