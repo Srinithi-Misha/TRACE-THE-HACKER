@@ -3,7 +3,7 @@ from flask import Flask, jsonify, request, session, send_from_directory
 from engine import DFA
 
 app = Flask(__name__, static_folder="static")
-app.secret_key = "change-this-key"
+app.secret_key = os.environ.get("SECRET_KEY", "local-development-key")
 
 CARDS = {
     "P": ("Phishing Email", "📧", "Fake email"),
@@ -107,4 +107,4 @@ def reset():
     return jsonify(ok=True)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
