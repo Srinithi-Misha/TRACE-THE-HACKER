@@ -69,6 +69,10 @@ The project demonstrates the practical application of Deterministic Finite Autom
 - Limited probes and star-based scoring.
 - Level progression.
 
+## Game Screenshots
+<img width="887" height="860" alt="image" src="https://github.com/user-attachments/assets/75d08105-f155-487d-b109-4c67d3066931" />
+
+
 ## Academic Context
 
 Developed as part of the course Formal Languages and Automata.
